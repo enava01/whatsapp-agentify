@@ -1,5 +1,7 @@
 // src/whatsapp.js
-const fetch = global.fetch || ((...args) => import('node-fetch').then(({default: f}) => f(...args)));
+// src/whatsapp.js
+// src/whatsapp.js
+const fetch = global.fetch || ((...args) => import('node-fetch').then(({ default: f }) => f(...args)));
 
 async function sendText(to, body) {
   const url = `https://graph.facebook.com/v20.0/${process.env.PHONE_NUMBER_ID}/messages`;
